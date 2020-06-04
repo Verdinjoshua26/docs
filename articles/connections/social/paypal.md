@@ -22,7 +22,7 @@ You can add functionality to your app that allows your users to login with PayPa
 
 ## Prerequisites
 
-Before connecting your Auth0 app to PayPal, you will need to have an account on the [PayPal Developer](https://developer.paypal.com/) portal.
+Before connecting your Auth0 app to PayPal, you will need to have a [PayPal Developer](https://developer.paypal.com/) account.
 
 ## Steps
 
@@ -34,15 +34,15 @@ To connect your app to PayPal, you will:
 
 ### Set up your app in PayPal
 
-1. Log in to [PayPal Developer Portal](https://developer.paypal.com/) and click on **Dashboard**.
-2. On the **My Apps & Credentials** page, scroll down to under the **REST API Apps** section and click **Create App**.
-3. Provide a value for **App Name** and click **Create App**. PayPal will display the **Client ID** and **Secret** values.
+1. Log in to the [PayPal Developer Portal](https://developer.paypal.com/) and click **Dashboard**.
+2. On the **My Apps & Credentials** page, scroll to the **REST API Apps** section and click **Create App**.
+3. Provide a value for **App Name** and click **Create App**. PayPal displays the **Client ID** and **Secret** values.
 
 ::: note
 By default you are editing your Sandbox account. Switch to your live account by toggling to **Live** on the top right of the page.
 :::
 
-4. Scroll to the **Sandbox App Settings** section and **Show** the **Return URL** box. Enter your <dfn data-key="callback">callback URL</dfn>:
+4. Scroll to the **Sandbox App Settings** section and click **Show** in the **Return URL** box. Enter your <dfn data-key="callback">callback URL</dfn>:
 
   `https://${account.namespace}/login/callback`
 
@@ -52,11 +52,11 @@ By default you are editing your Sandbox account. Switch to your live account by 
 
 6. For your Sandbox account to work, check the Full Name, Date of birth, Timezone, Locale, and Language because Auth0 requires this Basic Profile information.
 
-7. Click **Save**:
+7. Click **Save**.
 
 ### Create and enable a connection in Auth0
 
-[Set up the Bitbucket social connection](/dashboard/guides/connections/set-up-connections-social) in Auth0. Make sure you have the **API key** and the **API secret key** generated.
+[Set up the PayPal social connection](/dashboard/guides/connections/set-up-connections-social) in Auth0. Make sure you have the **API key** and the **API secret key** generated.
 
 ### Test the connection
 
